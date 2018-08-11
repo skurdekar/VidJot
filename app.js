@@ -76,10 +76,10 @@ app.get('/', (req, res) => {
 
 // Add about Route
 app.get('/about', (req, res) => {
-    const title = 'Welcome1';
     res.render('about');
 });
 
+//ideas and users pages
 app.use('/ideas', ideas);
 app.use('/users', users);
 
